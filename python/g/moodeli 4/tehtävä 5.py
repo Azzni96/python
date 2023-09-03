@@ -1,12 +1,16 @@
-user = ""
+username = ""
 password = ""
-person = 0
-while user != 'python' and password != 'rules':
-     if person < 5:
-      user = input("Anna user: ")
-      password = input("Anna password: ")
-      print("Write again.")
-      person += 1
+count = 0
 
-print("Access denied.")
-print("Welcome.")
+while count < 5:
+    username = input("Syötä käyttäjätunnus: ")
+    password = input("Syötä salasana: ")
+    if username == "python" and password == "rules":
+        print("Tervetuloa!")
+        break
+    else:
+        print("kirjoita uudelleen.")
+        count += 1
+
+if count == 5:
+    print("pääsy evätty")
