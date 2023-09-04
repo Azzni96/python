@@ -1,13 +1,19 @@
 import random
-total_points = int(input("Total_points: "))
-points_generated =""
-points_inside_circle = ""
 
-while total_points != 0:
-     x = random.randint(-1,1)
-     y = random.randint(-1,1)
-     if (x^2+y^2) <1:
-      points_inside_circle = int(input("points_inside_ciecle: "))
-     print(points_inside_circle)
-if points_generated == 4 * (points_inside_circle) / (total_points):
- print(points_generated)
+total_points = int(input("Syötä arvottavien pisteiden määrä: "))
+if total_points <= 0:
+    print("Arvottavien pisteiden määrä tulee olla positiivinen määrä: ")
+else:
+    points_inside_circle = 0
+    points_generated = 0
+
+    while points_generated <total_points:
+        x = random.uniform(-1,1)
+        y = random.uniform(-1,1)
+
+        if x**2+y**2 <1:
+           points_inside_circle +=1
+
+        points_generated +=1
+approximation = 4 * (points_inside_circle) / (total_points)
+print(f"piin likiarvo {total_points} arvotulla pisteellä: {approximation}")

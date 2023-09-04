@@ -1,16 +1,15 @@
-username = ""
-password = ""
-count = 0
+tuunus = ""
+salasana = ""
+käyttäjä = 0
 
-while count < 5:
-    username = input("Syötä käyttäjätunnus: ")
-    password = input("Syötä salasana: ")
-    if username == "python" and password == "rules":
-        print("Tervetuloa!")
-        break
-    else:
-        print("kirjoita uudelleen.")
-        count += 1
+while käyttäjä < 5:
+    tuunus = str(input("anna tuunus: "))
+    salasana = str(input("anna salasana: "))
+    käyttäjä +=1
+    if tuunus == 'python' and salasana == 'rules':
 
-if count == 5:
-    print("pääsy evätty")
+       print("tervetuloa")
+       break
+
+if käyttäjä == 5:
+   print("pääsy evätty")
