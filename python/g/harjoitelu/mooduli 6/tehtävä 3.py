@@ -3,8 +3,9 @@ litra = 3.785
 
 def gallonmäärä_litroksi():
     gallonmäärä = gallo * litra
-
     return gallonmäärä
+
+
 while gallo > 0:
 
  gallonmäärä = gallonmäärä_litroksi()
