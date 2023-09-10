@@ -1,14 +1,7 @@
-"""def kokonaisluku(ekä , toka):
-    summa = ekä + toka
-    return summa
-ekä= float(input("anna luku: "))
-toka = float(input("anna luku: "))
-tulos = kokonaisluku(ekä,toka)
-print(f"Lukujen {ekä:.3f} ja {toka:.3f} neliösumma on {tulos:.3f}.")"""""
 
 def lukujensumma(lista):
     summa = sum(lista)
     return summa
 
-luku= [1,2,3]
+luku= [1,2,3,4,5,6,7,8,9]
 print(lukujensumma(luku))
