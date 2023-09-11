@@ -10,7 +10,6 @@ while True:
     if lentoasema in lentoasemat:
         print(f"lentoasema {lentoasema} ICAO-koodi on {lentoasemat[lentoasema]}.")
     elif lentoasema == "lopettaa":
-        print("lopettaa")
         break
 
 
