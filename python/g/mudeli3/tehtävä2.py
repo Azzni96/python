@@ -1,7 +1,7 @@
 import mysql.connector
 
 def hae_lentoasemien_tyypit_maakodilla(iso_country):
-    sql = f"select  type, count(type) as count from airport where iso_country ='{iso_country}' group by type;"
+    sql = f"select  type, count(type)  as count from airport where iso_country ='{iso_country}' group by type;"
     print(sql)
     kursori = yhteys.cursor(dictionary=True)
     kursori.execute(sql)
