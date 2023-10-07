@@ -473,7 +473,7 @@ print("Italia")
 print("Puola")
 print("Portugali")
 vieraillut_maat = []
-coins = 0
+coins = 25
 
 matkustamisen_hinta = {
     "ruotsi": 10,
