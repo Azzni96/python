@@ -479,8 +479,10 @@ def puola(coins):
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
+
+
 Vieraillut_maat = []
-maxcoins_voittaa = 120
+maxcoins_voittaa = 1000
 coins = 0
 print("Hei! Valitse alla olevasta listasta mihin kohteeseen haluat matkustaa?")
 
@@ -499,6 +501,8 @@ print("Portugali")
 #ABC
 while True:
     valtio = str(input("Minne haluat matkustaa?: ")).lower()
+    if valtio == "ranska" and coins < maxcoins_voittaa:
+        print("Valitettavasti sinulla ei ole tarpeeksi kolikoita matkustaaksesi Ranskaan.")
     if valtio in  ("ruotsi","norja","iso-britannia", "saksa", "belgia" , "espanja" , "portugali", "kreikka", "italia", "puola"):
         if valtio in Vieraillut_maat:
             print(f"Olet jo matkustanut kohteeseen {valtio}. Valitse toinen kohde.")
@@ -525,13 +529,13 @@ while True:
                  coins = italia(coins)
             elif valtio == "puola":
                  coins = puola(coins)
-            elif maxcoins_voittaa >= coins:
-                 print("Voitit")
-                 break
-    elif valtio == "exit":
-        print("Kiitos pelaamisesta!")
-        print(f"Sinulla on yhteensä {coins} kolikkoa.")
-        break
+            elif maxcoins_voittaa <= coins:
+                print("Voitit!")
+
+            elif valtio == "exit":
+                print("Kiitos pelaamisesta!")
+                print(f"Sinulla on yhteensä {coins} kolikkoa.")
+                break
 
     else:
          print("Valitse jokin kohteista tai kirjoita 'exit' lopettaaksesi pelin.")
