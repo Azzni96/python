@@ -11,7 +11,7 @@ def ruotsi(coins):
             coins += 5
             break
         elif vastaus == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen")
@@ -24,7 +24,7 @@ def ruotsi(coins):
             coins += 5
             break
         elif vastaus == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen")
@@ -37,7 +37,7 @@ def ruotsi(coins):
             coins += 5
             break
         elif R3 in ("B", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif R3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
@@ -52,7 +52,7 @@ def norja(coins):
     while True:
         N1 = input("Norjan lipussa on punaista ja keltaista (oikein/väärin):").lower()
         if N1 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif N1 == "väärin":
             print("Onnea, oikea vastaus! Ansaitsit 5 kolikon :)")
@@ -70,7 +70,7 @@ def norja(coins):
            coins+=5
            break
         elif N2 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif N2 != "oikein" or "o" or "väärin" or "v":
                     print("Virheellinen vastaus, syötä oikein tai väärin:")
@@ -84,7 +84,7 @@ def norja(coins):
             coins+=5
             break
         elif N3 in ["B", "C", "D"]:
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif N3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
@@ -99,7 +99,7 @@ def Isobritannia(coins):
     while True:
         I1 = input("Onko Cillian Myrphy englantilainen? (oikein/väärin) :").lower()
         if I1 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif I1 == "väärin":
             print("Onnea, oikea vastaus! Ansaitsit 5 kolikon :)")
@@ -116,7 +116,7 @@ def Isobritannia(coins):
             coins += 5
             break
         elif I2 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif I2 != "oikein" or "o" or "väärin" or "v":
             print("Virheellinen vastaus, syötä oikein tai väärin:")
@@ -130,7 +130,7 @@ def Isobritannia(coins):
             coins += 5
             break
         elif I3 in ("B" or "C" or "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         elif I3 not in ("A" or "B" or "C" or "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
@@ -147,7 +147,7 @@ def saksa(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -160,7 +160,7 @@ def saksa(coins):
             coins += 5
             break
         elif vastaus2 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -173,7 +173,7 @@ def saksa(coins):
             coins += 5
             break
         elif vastaus3 in ("B", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
@@ -191,7 +191,7 @@ def belgia(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -204,7 +204,7 @@ def belgia(coins):
             coins += 5
             break
         elif vastaus2 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -217,7 +217,7 @@ def belgia(coins):
             coins += 5
             break
         elif vastaus3 in ("A", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
@@ -235,7 +235,7 @@ def espanja(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -248,7 +248,7 @@ def espanja(coins):
             coins += 5
             break
         elif vastaus2 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -261,7 +261,7 @@ def espanja(coins):
             coins += 5
             break
         elif vastaus3 in ("A", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
@@ -279,7 +279,7 @@ def portugali(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -292,7 +292,7 @@ def portugali(coins):
             coins += 5
             break
         elif vastaus2 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -305,7 +305,7 @@ def portugali(coins):
             coins += 5
             break
         elif vastaus3 in ("A", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
@@ -323,7 +323,7 @@ def kreikka(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -336,8 +336,7 @@ def kreikka(coins):
             coins += 5
             break
         elif vastaus2 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -371,8 +370,7 @@ def italia(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -385,8 +383,7 @@ def italia(coins):
             coins += 5
             break
         elif vastaus2 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -399,8 +396,7 @@ def italia(coins):
             coins += 5
             break
         elif vastaus3 in ("B", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
@@ -420,8 +416,7 @@ def puola(coins):
             coins += 5
             break
         elif vastaus1 == "väärin":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -434,8 +429,7 @@ def puola(coins):
             coins += 5
             break
         elif vastaus2 == "oikein":
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Syötä vastaus uudelleen (oikein/väärin)")
@@ -448,8 +442,7 @@ def puola(coins):
             coins += 5
             break
         elif vastaus3 in ("B", "C", "D"):
-            print("Väärä vastaus, menetät 2 kolikkoa :(")
-
+            print("Väärä vastaus, et saanut kolikkoa :(")
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
@@ -533,4 +526,3 @@ while True:
 
     else:
          print("Valitse jokin kohteista tai kirjoita 'exit' lopettaaksesi pelin.")
-
