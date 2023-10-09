@@ -8,7 +8,7 @@ yhteys = mysql.connector.connect(
          password='12345',
          autocommit=True
          )
-
+er
 
 pisteet = 0
 list = []
