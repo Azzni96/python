@@ -1,28 +1,4 @@
-import mysql.connector
 
-yhteys = mysql.connector.connect(
-         host='127.0.0.1',
-         port= 3306,
-         database='airport',
-         user='root',
-         password='12345',
-         autocommit=True
-         )
-
-
-pisteet = 0
-list = []
-def haeKentat():
-    sql = "select name from country where questions = 'yes'"
-    #print(sql)
-    kursori = yhteys.cursor()
-    kursori.execute(sql)
-    tulos = kursori.fetchall()
-    if kursori.rowcount >0 :
-        for rivi in tulos:
-            #print(rivi[0])
-            list.append(rivi[0])
-    return
 #ruotsi-funktio
 def ruotsi(coins):
     print("Tervetuloa matkalle Ruotsiin!")
@@ -65,8 +41,6 @@ def ruotsi(coins):
             break
         elif R3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
-    if coins >= 15:   # jos kaikki kysymykset on oikein
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -113,8 +87,6 @@ def norja(coins):
             break
         elif N3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -161,8 +133,6 @@ def Isobritannia(coins):
             break
         elif I3 not in ("A" or "B" or "C" or "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 # saksa-funktio
@@ -207,8 +177,6 @@ def saksa(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 # belgia-funktio
@@ -253,8 +221,6 @@ def belgia(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 # espanja-funktio
@@ -299,8 +265,6 @@ def espanja(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 # portugali-funktio
@@ -345,8 +309,6 @@ def portugali(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 # kreikka-funktio
@@ -392,8 +354,6 @@ def kreikka(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -439,8 +399,6 @@ def italia(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -486,8 +444,6 @@ def puola(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-    if coins >= 15:
-       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
