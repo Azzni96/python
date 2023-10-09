@@ -1,5 +1,5 @@
 import mysql.connector
-tt
+
 yhteys = mysql.connector.connect(
          host='127.0.0.1',
          port= 3306,
@@ -8,7 +8,7 @@ yhteys = mysql.connector.connect(
          password='12345',
          autocommit=True
          )
-er
+
 
 pisteet = 0
 list = []
