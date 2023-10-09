@@ -41,6 +41,8 @@ def ruotsi(coins):
             break
         elif R3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -88,6 +90,8 @@ def norja(coins):
             break
         elif N3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -134,6 +138,8 @@ def Isobritannia(coins):
             break
         elif I3 not in ("A" or "B" or "C" or "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 def saksa(coins):
@@ -177,7 +183,8 @@ def saksa(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 def belgia(coins):
@@ -221,7 +228,8 @@ def belgia(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 def espanja(coins):
@@ -265,7 +273,8 @@ def espanja(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 def portugali(coins):
@@ -309,7 +318,8 @@ def portugali(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 def kreikka(coins):
@@ -354,7 +364,8 @@ def kreikka(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -400,7 +411,8 @@ def italia(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
@@ -446,7 +458,8 @@ def puola(coins):
             break
         else:
             print("Valitse vaihtoehdoista A, B, C tai D")
-
+    if coins >= 15:
+       coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
