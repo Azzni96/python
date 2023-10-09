@@ -1,14 +1,14 @@
 
-
+#ruotsi-funktio
 def ruotsi(coins):
     print("Tervetuloa matkalle Ruotsiin!")
 
-#Kysymys1
+    # Kysymys 2 - Oikein/Väärin
     while True:
         vastaus = input("Ruotsi on euroopan pohjoisin valtio. (oikein/väärin): ").lower()
         if vastaus == "väärin":
             print("Onnea, oikea vastaus! Ansaitsit 5 kolikon :)")
-            coins += 5
+            coins += 5 #saa 5 coins jos vastaus on oikein
             break
         elif vastaus == "oikein":
             print("Väärä vastaus, et saanut kolikkoa :(")
@@ -16,7 +16,7 @@ def ruotsi(coins):
         else:
             print("Syötä vastaus uudelleen")
 
-#Kysymys2
+    # Kysymys 2 - Oikein/Väärin
     while True:
         vastaus = input(f"Ruotsi kuuluu skandinaviaan. (oikein/väärin): ").lower()
         if vastaus == "oikein":
@@ -29,7 +29,7 @@ def ruotsi(coins):
         else:
             print("Syötä vastaus uudelleen")
 
-#Kysymys3
+    # Monivalintakysymys
     while True:
         R3 = input("""Ruotsin eteläisin kaupunki on \nA: Malmö \nB: Skellefteå \nC: Tukholma\nD: Umeå\nVastaus: """).upper()
         if R3 == "A":
@@ -41,16 +41,16 @@ def ruotsi(coins):
             break
         elif R3 not in ("A", "B", "C", "D"):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
-    if coins >= 15:
+    if coins >= 15:   # jos kaikki kysymykset on oikein
        coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
 
 
-
+#norja-funktio
 def norja(coins):
     print("Tervetuloa matkalle Norjaan!")
-#kyssäri1
+    # Kysymys 1 - Oikein/Väärin
     while True:
         N1 = input("Norjan lipussa on punaista ja keltaista (oikein/väärin):").lower()
         if N1 == "oikein":
@@ -64,7 +64,7 @@ def norja(coins):
             print("Syötä vastaus uudelleen")
 
 
-#kyssäri2
+    # Kysymys 2 - Oikein/Väärin
     while True:
         N2 = str(input("Norjassa puhutaan saamen kieltä (oikein/väärin): ")).lower()
         if N2 == "oikein":
@@ -77,8 +77,7 @@ def norja(coins):
         elif N2 != "oikein" or "o" or "väärin" or "v":
                     print("Virheellinen vastaus, syötä oikein tai väärin:")
 
-
-#kyssäri3
+    # Monivalintakysymys
     while True:
         N3 = input("""Norjan länsipuolella sijaitsee \nA: Atlantin valtameri \nB: Itämeri \nC: Punainen meri\nD: Saimaa\nVastaus: """).upper()
         if N3 == "A":
@@ -96,10 +95,10 @@ def norja(coins):
     return coins
 
 
-
+# isobritannia-funktio
 def Isobritannia(coins):
     print("Tervetuloa matkalle Iso-britanniaan!")
-    # kyssäri1
+    # Kysymys 1 - Oikein/Väärin
     while True:
         I1 = input("Onko Cillian Myrphy englantilainen? (oikein/väärin) :").lower()
         if I1 == "oikein":
@@ -112,7 +111,7 @@ def Isobritannia(coins):
         else:
             print("Syötä vastaus uudelleen")
 
-    # kyssäri2
+    # Kysymys 2 - Oikein/Väärin
     while True:
         I2 = str(input("Keitetyt pavut kuuluvat englantilaiseen aamupalaan? (oikein/väärin): ")).lower()
         if I2 == "oikein":
@@ -125,7 +124,7 @@ def Isobritannia(coins):
         elif I2 != "oikein" or "o" or "väärin" or "v":
             print("Virheellinen vastaus, syötä oikein tai väärin:")
 
-    # kyssäri3
+    # Monivalintakysymys
     while True:
         I3 = input(
             """Kuka englantilainen julkisuuden henkilö kuoli hiljattain \nA: Queen Elizabeth \nB: Boris Johnson \nC: Harry Styles\nD: Lily McHardin\nVastaus: """).upper()
@@ -142,6 +141,7 @@ def Isobritannia(coins):
        coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
+# saksa-funktio
 def saksa(coins):
     print("Tervetuloa matkalle Saksaan!")
 
@@ -187,6 +187,7 @@ def saksa(coins):
        coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
+# belgia-funktio
 def belgia(coins):
     print("Tervetuloa matkalle Belgiaan!")
 
@@ -232,6 +233,7 @@ def belgia(coins):
        coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
+# espanja-funktio
 def espanja(coins):
     print("Tervetuloa matkalle Espanjaan!")
 
@@ -277,6 +279,7 @@ def espanja(coins):
        coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
+# portugali-funktio
 def portugali(coins):
     print("Tervetuloa matkalle Portugaliin!")
 
@@ -322,6 +325,7 @@ def portugali(coins):
        coins +=5
     print(f"Sinulla on {coins} kolikkoa")
     return coins
+# kreikka-funktio
 def kreikka(coins):
     print("Tervetuloa matkalle Kreikkaan!")
 
@@ -466,7 +470,7 @@ def puola(coins):
 
 
 
-print("Hei! Valitse alla olevasta listasta mihin kohteeseen haluat matkustaa?")
+print("Hei! Valitse alla olevasta listasta mihin kohteeseen haluat matkustaa?") #tulostaa mihin valtiot pelaja matkustaa
 
 print("Ruotsi")
 print("Norja")
@@ -478,8 +482,8 @@ print("Kreikka")
 print("Italia")
 print("Puola")
 print("Portugali")
-vieraillut_maat = []
-coins = 25
+vieraillut_maat = [] #valtio listä
+coins = 25 #paljonko rahoja pelajalle on alussa
 
 matkustamisen_hinta = {
     "ruotsi": 10,
@@ -500,16 +504,16 @@ matkustamisen_hinta = {
 #ABC
 while True:
     valtio = str(input("Minne haluat matkustaa?: ")).lower()
-    if valtio in vieraillut_maat:
+    if valtio in vieraillut_maat:   #koodi ei onnistuu käydä sama valtio kaksi kertaa
         print(f"Olet jo matkustanut kohteeseen {valtio}. Valitse toinen kohde.")
     elif valtio in matkustamisen_hinta:
         hinta = matkustamisen_hinta[valtio]
-        if coins < hinta:
+        if coins < hinta: #koodi ei onnistuu matkustaa toinen valtioon jos hänelle vähän coins
             print(f"Valitettavasti sinulla ei ole tarpeeksi kolikoita matkustaaksesi {valtio}iin. Matkustaminen maksaa {hinta} kolikkoa.")
         else:
             print(f"Matkustetaan {valtio}iin!")
-            coins -= hinta
-            vieraillut_maat.append(valtio)
+            coins -= hinta #maksuu matkaa hinta
+            vieraillut_maat.append(valtio) #lisätä valtio lsitässä
 
             if valtio == "ruotsi":
                  coins= ruotsi(coins)
@@ -532,10 +536,10 @@ while True:
             elif valtio == "puola":
                  coins = puola(coins)
 
-    if valtio == "exit":
+    if valtio == "exit": #jos ei haluaa jatkaa pelissa
             print("Kiitos pelaamisesta!")
             print(f"Sinulla on yhteensä {coins} kolikkoa.")
             break
 
-    else:
+    else: #kertää mitä voit tehdä jatkussa
          print("Valitse jokin kohteista tai kirjoita 'exit' lopettaaksesi pelin.")
