@@ -561,7 +561,7 @@ matkustamisen_hinta = {
     "kreikka": 10,
     "italia": 10,
     "puola": 10,
-    "ranska": 100  # Lisää Ranskan hinta
+    "ranska": 60  # Lisää Ranskan hinta
 }
 
 
