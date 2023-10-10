@@ -1,4 +1,4 @@
-
+import story
 #ruotsi-funktio
 def ruotsi(coins):
     print("Tervetuloa matkalle Ruotsiin!")
