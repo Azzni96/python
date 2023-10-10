@@ -46,7 +46,8 @@ def ruotsi(coins):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
     if vastaus1 == "oikein" and vastaus2 == "oikein" and vastaus3 == "oikein":
             coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+            print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 
 
@@ -97,7 +98,8 @@ def norja(coins):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
     if N1 == "oikein" and N2 == "oikein" and N3 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 
 
@@ -148,7 +150,8 @@ def Isobritannia(coins):
             print("Virheellinen vastaus, valitse vaihtoehdoista A,B,C tai D")
     if I1 == "oikein" and I2 == "oikein" and I3 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 # saksa-funktio
 def saksa(coins):
@@ -197,7 +200,8 @@ def saksa(coins):
             print("Valitse vaihtoehdoista A, B, C tai D")
     if vastaus1 == "oikein" and vastaus2 == "oikein" and vastaus3 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 # belgia-funktio
 def belgia(coins):
@@ -246,7 +250,8 @@ def belgia(coins):
             print("Valitse vaihtoehdoista A, B, C tai D")
     if vastaus1 == "oikein" and vastaus3 == "oikein" and vastaus2 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 # espanja-funktio
 def espanja(coins):
@@ -295,7 +300,8 @@ def espanja(coins):
             print("Valitse vaihtoehdoista A, B, C tai D")
     if vastaus1 == "oikein" and vastaus3 == "oikein" and vastaus2 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Ninulla on {coins} kolikkoa")
     return coins
 # portugali-funktio
 def portugali(coins):
@@ -344,7 +350,8 @@ def portugali(coins):
             print("Valitse vaihtoehdoista A, B, C tai D")
     if vastaus1 == "oikein" and vastaus3 == "oikein" and vastaus2 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 # kreikka-funktio
 def kreikka(coins):
@@ -394,7 +401,8 @@ def kreikka(coins):
             print("Valitse vaihtoehdoista A, B, C tai D")
     if vastaus1 == "oikein" and vastaus3 == "oikein" and vastaus2 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 
 # Italia-funktio
@@ -445,7 +453,8 @@ def italia(coins):
 
     if vastaus1 == "oikein" and vastaus3 == "oikein" and vastaus2 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 
 # Puola-funktio
@@ -496,11 +505,16 @@ def puola(coins):
 
     if vastaus1 == "oikein" and vastaus3 == "oikein" and vastaus2 == "oikein":
         coins += 5
-    print(f"Sinulla on {coins} kolikkoa")
+        print("Hienoa! Koska vastasit oikein kaikkiin kysymyksiin, olet ansainnut 5 extra euroa")
+    print(f"Nyt sinulla on {coins} kolikkoa")
     return coins
 
 
-
+print("Herään pimeästä huoneesta kylmissäni, kahlittuna patteriin, joka paikkaan sattuu ja muistini tuntuu häilyvän. "
+      "viimeisin muistoni on rikkaan, mutta ärsyttävän perheeni "
+      "kanssa viettämä illallinen. Tuntuu kuin eiliseltä, mutta en ole varma."
+      )
+print("Missä mä oikein oon? Miks mä oon täällä?")
 
 print("Hei! Valitse alla olevasta listasta mihin kohteeseen haluat matkustaa?") #tulostaa mihin valtiot pelaja matkustaa
 
