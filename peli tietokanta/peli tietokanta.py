@@ -1,4 +1,10 @@
 import story
+
+#tarvitse kehitää database
+#voi käyttää 2 sql sama aika
+#powerpoint käyttämissä
+#tarina muokaminen
+#
 import mysql.connector
 def haekentantiedot():
     sql = "select * from airport;"
