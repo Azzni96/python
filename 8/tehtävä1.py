@@ -11,7 +11,7 @@ def haekentantiedot(icao):
 yhteys = mysql.connector.connect(
          host='127.0.0.1',
          port= 3306,
-         database='flight_game',
+         database='lentokone',
          user='root',
          password='Nihad1996#',
          autocommit=True

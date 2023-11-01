@@ -4,4 +4,3 @@ while luku > 0:
       tuuma = luku * Cm
       print(tuuma)
       luku = int(input("Anna tuuma: "))
-print("lopettaa")

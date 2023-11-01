@@ -11,6 +11,6 @@ while gallo > 0:
  gallonmäärä = gallonmäärä_litroksi()
  print(gallonmäärä)
  gallo = float(input("gallonmäärä: "))
-else:
-    print()
+
+print()
 

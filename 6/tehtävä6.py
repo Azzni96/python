@@ -2,9 +2,7 @@ import math
 def pitsa(halkaisia,hinta):
     säde= (halkaisia/2) / 100
     pintala = math.pi * (säde ** 2)
-
     arvo = hinta / pintala
-
     return arvo
 halkaisia_1 = int(input("anna halkaisia: "))
 hinta_1 = int(input("anna hinta1:"))
